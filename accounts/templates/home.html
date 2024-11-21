@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Главная страница</title>
 </head>
 <body>
-    <h1>Welcome to the Home Page</h1>
-    <p>Please log in or register to continue.</p>
-    <a href="{% url 'accounts:login' %}">Log in</a> | <a href="{% url 'accounts:register' %}">Register</a>
+    <h1>Добро пожаловать в Design.pro!</h1>
+    <p><a href="{% url 'login' %}">Войти</a> или <a href="{% url 'register' %}">Зарегистрироваться</a></p>
 </body>
 </html>
